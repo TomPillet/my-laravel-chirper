@@ -58,7 +58,7 @@ export default function Chirp({ chirp }) {
                             <button className="mt-4" onClick={() => { setEditing(false); reset(); clearErrors(); }}>Cancel</button>
                         </div>
                     </form>
-                    : <p className="mt-4 text-lg text-gray-900">{chirp.message}</p>
+                    : <p className="mt-4 text-lg text-gray-900 whitespace-pre-wrap">{chirp.message}</p>
                     }
             </div>
         </div>
